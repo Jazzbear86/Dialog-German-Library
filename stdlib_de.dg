@@ -1148,28 +1148,14 @@
 
 (e)
 		%%Adjektiv Endung Feminin
-		(current case $Case)
-		(current article $Article) 
 		(if) ($Case = #Nominativ) (then)
-		{
-			(if) ($Article = #Indefinite) (then)
-				(no space)es
-			(else)
-				(no space)e
-			(endif)
-		}
+			(no space)e
 		(elseif) ($Case = #Genitiv) (then)
 			(no space)en
 		(elseif) ($Case = #Dativ) (then)
 			(no space)en
 		(else)
-		{
-			(if) ($Article = #Indefinite) (then)
-				(no space)es
-			(else)
-				(no space)e
-			(endif)
-		}
+			(no space)e
 		(endif)
 
 (e+)
